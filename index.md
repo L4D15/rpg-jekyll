@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+Welcome to RPG Jekyll, a Jekyll template aimed at roleplaying campaign management and world builing.
