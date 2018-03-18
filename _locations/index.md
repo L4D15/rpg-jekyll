@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Locations
 permalink: /locations/index.html
 ---

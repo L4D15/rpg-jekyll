@@ -12,7 +12,7 @@
 
         {% if category != "posts" %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ url }}">{{ category }}</a>
+            <a class="nav-link" href="{{ url }}">{{ category | capitalize }}</a>
           </li>
         {% endif %}
       {% endfor %}

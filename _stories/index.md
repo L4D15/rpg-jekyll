@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Stories
 permalink: /stories/index.html
 ---
