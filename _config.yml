@@ -68,3 +68,8 @@ defaults:
       type: "characters"
     values:
       layout: character
+  -
+    scope:
+      type: "items"
+    values:
+      layout: item
