@@ -78,3 +78,8 @@ defaults:
       type: "locations"
     values:
       layout: location
+  -
+    scope:
+      type: "rules"
+    values:
+      layout: rule
