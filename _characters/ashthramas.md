@@ -1,46 +1,30 @@
 ---
 title: Ashthramas, the Dark Heart
 permalink: /ashthramas
-tag: [NPC, Elf, Evil, Wizard]
+tag: [NPC, Abhuman, Evil, Nano, Numenera]
 image: /assets/img/characters/ashthramas_full.jpg
 preview: /assets/img/characters/ashthramas_preview.jpg
 stats:
-    STR: "10 (+0)"
-    DEX: "14 (+2)"
-    CON: "8 (-1)"
-    INT: "15 (+2)"
-    WIS: "14 (+2)"
-    CHA: "14 (+2)"
+    Might: 8 (0)
+    Speed: 12 (0)
+    Intellect: 23 (1)
 skills:
-    Arcana: "+4"
-    Deception: "+4"
-    History: "+4"
-    Insight: "+4"
-    Perception: "+4"
+    Numenera: -1
+    Mental Effects: -1
+    Concentration: -1
+    Puzzles: +1
 combat:
-    HP: 5
-    AC: 12
-    Initiative: "+2"
-    Unarmed Strike: +2 to hit, 1 bludgeoning
-    Dagger: +4 to hit, 1d4+2 piercing
-    Quaterstaff: +4 to hit, 1d6 bludgeoning
+    Staff: -1 to attack, 2 damage 
 ---
 
-Level 1 drow wizard exiled from his land for unspokable crimes. He now roams the surface searching for powerful artifacts capable of curing the dissease that's slowly killing him.
+A strong-willed nano who wields power with precision, exiled from his land for unspokable crimes. He now roams the surface searching for powerful Numenera  capable of curing the genetic dissease that's slowly killing him.
 
-Goals:
+# Special Abilities
 
-* Find the [Staff of Ral Kazak](/staffofralkazak).
-* Use it to obtain inmortality.
-* Go back to the underdark and take revenge.
-
-# Spells
-
-| Level | Spell | Description |
+| Cost (Int) | Name | Description |
 |:-----:|:------|:------------|
-| 0 | Frostbite | Deals ice damage |
-| 0 | Friends | Make someone more kean to help you |
-| 0 | Ray of Frost | Deals ice damage at range |
+| 1 | Hedge Magic | TBA |
+| 2 | Push | TBA |
 
 ### Disclaimer
 
