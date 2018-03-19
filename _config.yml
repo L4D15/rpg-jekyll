@@ -44,11 +44,15 @@ plugins:
 
 # Custom collections
 collections:
+  rules:
+    output: true
+  stories:
+    output: true
   characters:
     output: true
   locations:
     output: true
-  stories:
+  items:
     output: true
 
 # Default values
