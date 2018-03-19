@@ -62,3 +62,8 @@ defaults:
       path: ""
     values:
       layout: default
+  -
+    scope:
+      type: "characters"
+    values:
+      layout: character
