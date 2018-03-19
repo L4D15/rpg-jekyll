@@ -1,8 +1,10 @@
 <div class="card" style="width: 18rem;">
-    {% if include.image %}
-    <img class="card-img-top" src="{{ include.image }}" alt="{{ include.title }}">
-    {% endif %}
-    <div class="card-body">
-        <a class="card-link" href="{{ include.url }}"><h5 class="card-title">{{ include.title }}</h5></a>
-    </div>
+    <a class="card-link" href="{{ include.url }}">
+        {% if include.image %}
+        <img class="card-img-top" src="{{ include.image }}" alt="{{ include.title }}">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ include.title }}</h5>
+        </div>
+    </a>
 </div>
