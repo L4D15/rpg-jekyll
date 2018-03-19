@@ -1,14 +1,7 @@
----
-title: Characters
-permalink: /characters/index.html
----
-
-<p>This is a list of all characters in your campaign.</p>
-
 <div class="row">
-        {% for item in site.characters %}
+        {% for item in include.list %}
             <div class="col-sm-4">
-            {% if item.title != "Characters" %}
+            {% if item.title != page.title %}
                 {% include card.html image=item.image title=item.title url=item.url %}
             {% endif %}
             </div>
