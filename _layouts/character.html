@@ -4,60 +4,63 @@ layout: default
 
 {% if page.stats or page.sills or page.combat or page.image %}
 <div class="row mt-3">
-    {% if page.image %}
-    <div class="col-lg-3 col-md-4">
-        <img class="img-fluid img-thumbnail" src="{{ page.image }}"/>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="row mt-3">
+            {% if page.image %}
+            <div class="col-lg-6">
+                <img class="img-fluid img-thumbnail" src="{{ page.image }}"/>
+
+            {% endif %}
+
+            {% if page.stats %}
+                <h5>Stats</h5>
+                <table class="table table-striped">
+                    <tbody>
+                        {% for stat in page.stats %}
+                        <tr>
+                            <td>{{ stat[0] }}</td>
+                            <td>{{ stat[1] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+
+            <div class="col-lg-6">
+                {% if page.skills %}
+
+                <h5>Skills</h5>
+                    <table class="table table-striped">
+                        {% for skill in page.skills %}
+                        <tr>
+                            <td>{{ skill[0] }}</td>
+                            <td>{{ skill[1] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+
+                {% endif %}
+
+                {% if page.combat %}
+
+                <h5>Combat</h5>
+                    <table class="table table-striped">
+                        {% for entry in page.combat %}
+                        <tr>
+                            <td>{{ entry[0] }}</td>
+                            <td>{{ entry[1] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+
+                {% endif %}
+            </div>
+        {% endif %}
+        </div>
     </div>
-    {% endif %}
-
-    {% if page.stats %}
-    <div class="col-lg-2 col-md-3">
-    <h5>Stats</h5>
-    <table class="table table-striped">
-        <tbody>
-            {% for stat in page.stats %}
-            <tr>
-                <td>{{ stat[0] }}</td>
-                <td>{{ stat[1] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+        <br>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    {{ content }}
     </div>
-    {% endif %}
-
-    {% if page.skills %}
-
-    <div class="col-lg-2 col-md-3">
-    <h5>Skills</h5>
-        <table class="table table-striped">
-            {% for skill in page.skills %}
-            <tr>
-                <td>{{ skill[0] }}</td>
-                <td>{{ skill[1] }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
-
-    {% endif %}
-
-    {% if page.combat %}
-
-    <div class="col-lg-5 col-md-6">
-    <h5>Combat</h5>
-        <table class="table table-striped">
-            {% for entry in page.combat %}
-            <tr>
-                <td>{{ entry[0] }}</td>
-                <td>{{ entry[1] }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-    </div>
-
-    {% endif %}
 </div>
-{% endif %}
-
-{{ content }}
