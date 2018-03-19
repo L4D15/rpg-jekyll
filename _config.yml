@@ -73,3 +73,8 @@ defaults:
       type: "items"
     values:
       layout: item
+  -
+    scope:
+      type: "locations"
+    values:
+      layout: location
