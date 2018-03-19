@@ -68,3 +68,18 @@ defaults:
       type: "characters"
     values:
       layout: character
+  -
+    scope:
+      type: "items"
+    values:
+      layout: item
+  -
+    scope:
+      type: "locations"
+    values:
+      layout: location
+  -
+    scope:
+      type: "rules"
+    values:
+      layout: rule
