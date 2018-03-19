@@ -1,6 +1,6 @@
 <div class="row">
         {% for item in include.list %}
-            <div class="col-sm-4">
+            <div class="col-lg-4 col-md-6">
             {% if item.title != page.title %}
                 {% include card.html image=item.preview title=item.title url=item.url %}
             {% endif %}
