@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    <a class="card-link" href="{{ include.url }}">
+        {% if include.image %}
+        <img class="card-img-top" src="{{ include.image }}" alt="{{ include.title }}">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ include.title }}</h5>
+            {% for tag in include.tags %}
+                <span class="badge badge-secondary">{{ tag }}</span>
+            {% endfor %}
+        </div>
+    </a>
+</div>

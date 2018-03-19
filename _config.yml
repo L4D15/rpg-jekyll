@@ -13,22 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: RPG Jekyll
+email: thedragonladis@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+version: 1.0.0
+twitter_username: L4D15
+github_username:  L4D15
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
+  - bootstrap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +43,44 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Custom collections
+collections:
+  rules:
+    output: true
+  stories:
+    output: true
+  characters:
+    output: true
+  locations:
+    output: true
+  items:
+    output: true
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      type: "characters"
+    values:
+      layout: character
+  -
+    scope:
+      type: "items"
+    values:
+      layout: item
+  -
+    scope:
+      type: "locations"
+    values:
+      layout: location
+  -
+    scope:
+      type: "rules"
+    values:
+      layout: rule
