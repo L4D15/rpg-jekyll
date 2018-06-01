@@ -1,12 +1,26 @@
 body {
-    font-family: Alegreya;
-    //font-size: 1.2rem;
+    //font-family: Alegreya;
+    font-family: 'Alegreya Sans';
+    font-size: 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6, nav, .badge {
-    font-family: "Alegreya Sans"
+    //font-family: "Alegreya Sans"
 }
 
 table {
     @extend .table;
+}
+
+.auto-width {
+    width: auto;
+}
+
+img {
+    @extend .img-fluid;
+}
+
+blockquote {
+    @extend .alert;
+    @extend .alert-primary;
 }
