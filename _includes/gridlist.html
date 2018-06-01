@@ -1,9 +1,9 @@
 <div class="row">
         {% for item in include.list %}
-            <div class="col-lg-4 col-md-6 col-sm-12">
             {% if item.title != page.title %}
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
                 {% include card.html image=item.preview title=item.title url=item.url tags=item.tag %}
-            {% endif %}
             </div>
+            {% endif %}
         {% endfor %}
 </div>
