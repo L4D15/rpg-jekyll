@@ -11,7 +11,7 @@
 
                     <h1>{{ page.title }}</h1>
 
-                    {% if page.dm_only == false or jekyll.environment==development %}
+                    {% if page.dm_only==false or jekyll.environment=="development" %}
 
                         {% if page.dm_only %}
                             <span class="badge badge-danger">DM Only</span>
