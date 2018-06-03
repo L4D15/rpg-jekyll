@@ -1,9 +1,11 @@
 <div class="row">
         {% for item in include.list %}
             {% if item.title != page.title %}
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
-                {% include card.html image=item.preview title=item.title url=item.url tags=item.tag %}
-            </div>
+                {% if item.dm_only == false or jekyll.environment == "development" %}
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-3">
+                    {% include card.html image=item.preview title=item.title url=item.url tags=item.tag dm_only=item.dm_only %}
+                </div>
+                {% endif%}
             {% endif %}
         {% endfor %}
 </div>
