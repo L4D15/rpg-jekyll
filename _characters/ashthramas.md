@@ -4,6 +4,7 @@ permalink: /ashthramas
 tag: [NPC, Abhuman, Evil, Nano, Numenera]
 image: /assets/img/characters/ashthramas_full.jpg
 preview: /assets/img/characters/ashthramas_preview.jpg
+dm_only: true
 stats:
     Might: 8 (0)
     Speed: 12 (0)
