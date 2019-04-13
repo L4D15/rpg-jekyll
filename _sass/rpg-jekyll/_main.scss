@@ -24,3 +24,9 @@ blockquote {
     @extend .alert;
     @extend .alert-primary;
 }
+
+.content-area {
+    @extend .p-4;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+}

@@ -83,3 +83,8 @@ defaults:
       type: "rules"
     values:
       layout: rule
+  -
+    scope:
+      type: "stories"
+    values:
+      layout: story
