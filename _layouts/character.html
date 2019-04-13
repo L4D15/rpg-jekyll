@@ -13,38 +13,43 @@ layout: default
             {% endif %}
 
             {% if page.stats %}
-                <h5>Stats</h5>
-                <table class="table table-striped">
-                    <tbody>
-                        {% for stat in page.stats %}
-                        <tr>
-                            <td>{{ stat[0] }}</td>
-                            <td>{{ stat[1] }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+                <div class="content-area">
+                    <h5>Stats</h5>
+                    <table class="table table-striped">
+                        <tbody>
+                            {% for stat in page.stats %}
+                            <tr>
+                                <td>{{ stat[0] }}</td>
+                                <td>{{ stat[1] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
             {% endif %}
 
             <div class="col-lg-6">
                 {% if page.skills %}
 
-                <h5>Skills</h5>
-                    <table class="table table-striped">
-                        {% for skill in page.skills %}
-                        <tr>
-                            <td>{{ skill[0] }}</td>
-                            <td>{{ skill[1] }}</td>
-                        </tr>
-                        {% endfor %}
-                    </table>
+                <div class="content-area">
+                    <h5>Skills</h5>
+                        <table class="table table-striped">
+                            {% for skill in page.skills %}
+                            <tr>
+                                <td>{{ skill[0] }}</td>
+                                <td>{{ skill[1] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </table>
+                </div>
 
                 {% endif %}
 
                 {% if page.combat %}
 
-                <h5>Combat</h5>
+                <div class="content-area">
+                    <h5>Combat</h5>
                     <table class="table table-striped">
                         {% for entry in page.combat %}
                         <tr>
@@ -53,6 +58,7 @@ layout: default
                         </tr>
                         {% endfor %}
                     </table>
+                </div>
 
                 {% endif %}
             </div>
@@ -60,7 +66,7 @@ layout: default
         </div>
     </div>
         <br>
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-lg-6 col-md-6 col-sm-12 content-area">
     {{ content }}
     </div>
 </div>
