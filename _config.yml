@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write and manage roleplaying games for your favourite  game using the simple Markdown.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-version: 1.3.0
+version: 1.4.0
 twitter_username: L4D15
 github_username:  L4D15
 
