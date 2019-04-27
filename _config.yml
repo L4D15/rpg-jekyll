@@ -54,6 +54,10 @@ collections:
     output: true
   items:
     output: true
+  posts:
+    output: true
+    permalink: /posts/:title/
+    dm_only: true
 
 # Default values
 defaults:
@@ -63,6 +67,12 @@ defaults:
     values:
       layout: default
       dm_only: false
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: post
+      dm_only: true
   -
     scope:
       type: "characters"
