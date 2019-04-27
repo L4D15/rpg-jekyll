@@ -83,6 +83,7 @@ defaults:
       type: "rules"
     values:
       layout: rule
+      category: General
   -
     scope:
       type: "stories"

@@ -1,0 +1,10 @@
+{% for item in include.collection %}
+<li>
+	<a href="{{ item.url }}">{{ item.title }}</a>
+	{% if item.children %}
+		<ul>
+		{% include linkgroup.html collection=item.children level=next_level %}
+		</ul>
+{% endif %}
+</li>
+{% endfor %}

@@ -3,4 +3,14 @@ layout: default
 ---
 <div class="content-area">
     {{ content }}
+
+    <h1 class="page-title">Sessions</h1>
+
+    {% include gridlist.html list=site.posts %}
+
+    <!-- {% for post in site.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    {{ post.excerpt }}
+    <div class="btn btn-outline-dark float-right"><a href="{{ post.url }}">Read more</a></div>
+    {% endfor %} -->
 </div>
