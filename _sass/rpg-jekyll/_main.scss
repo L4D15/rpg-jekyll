@@ -31,6 +31,14 @@ a, a:link, a:hover {
 
 table {
     @extend .table;
+    @extend .table-sm;
+    @extend .table-striped;
+    @extend .table-hover;
+    @extend .table-responsive;
+}
+
+thead {
+    @extend .thead-dark;
 }
 
 .content-area table  {
@@ -47,7 +55,13 @@ img {
 
 blockquote {
     @extend .alert;
-    @extend .alert-primary;
+    @extend .alert-warning;
+}
+
+.highlight {
+    @extend .alert;
+    @extend .alert-light;
+    @extend .p-2;
 }
 
 .content-area {
