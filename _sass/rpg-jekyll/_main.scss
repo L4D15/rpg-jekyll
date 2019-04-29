@@ -1,14 +1,47 @@
 body {
     font-family: 'Open Sans';
     font-size: 1.0rem;
+    color: #55595c;
+    line-height: 1.45;
 }
 
 h1, h2, h3, h4, h5, h6, nav, .badge {
     font-family: 'Montserrat';
     text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.page-title {
+  font-size: 2em !important;
+}
+
+a, a:link, a:hover {
+    color: #DA8466;
 }
 
 table {
+    @extend .table;
+    @extend .table-sm;
+    @extend .table-striped;
+    @extend .table-hover;
+    @extend .table-responsive;
+}
+
+thead {
+    @extend .thead-dark;
+}
+
+.content-area table  {
     @extend .table;
 }
 
@@ -22,11 +55,45 @@ img {
 
 blockquote {
     @extend .alert;
-    @extend .alert-primary;
+    @extend .alert-warning;
+}
+
+.highlight {
+    @extend .alert;
+    @extend .alert-light;
+    @extend .p-2;
 }
 
 .content-area {
     @extend .p-4;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.06);
+}
+
+.content-area h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.content-area h2 {
+    font-size: 1.3em;
+}
+
+.content-area h2::after {
+    content:' ';
+    display: block;
+    border: 1px solid #55595c;
+}
+
+.content-area h3 {
+    font-size: 1.2em;
+}
+
+.content-area h4 {
+    font-size: 1.1em;
+}
+
+.content-area h5 {
+    font-size: 1em;
+    font-weight: bold;
 }

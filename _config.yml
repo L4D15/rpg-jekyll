@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write and manage roleplaying games for your favourite  game using the simple Markdown.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-version: 1.4.0
+version: 1.5.0
 twitter_username: L4D15
 github_username:  L4D15
 
@@ -54,6 +54,10 @@ collections:
     output: true
   items:
     output: true
+  posts:
+    output: true
+    permalink: /posts/:title/
+    dm_only: true
 
 # Default values
 defaults:
@@ -63,6 +67,12 @@ defaults:
     values:
       layout: default
       dm_only: false
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: post
+      dm_only: true
   -
     scope:
       type: "characters"
@@ -83,6 +93,7 @@ defaults:
       type: "rules"
     values:
       layout: rule
+      category: General
   -
     scope:
       type: "stories"
