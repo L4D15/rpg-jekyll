@@ -19,6 +19,14 @@ RPG Jekyll uses [kramdown](https://kramdown.gettalong.org/documentation.html) to
 
 Using a combination of pre-built funcionality and custom HTML code we can achieve great results with little to no effort.
 
+## Automatic linking
+
+Write the title of any other page in your site and it will automatically be converted to a link to that page. The link search is case sentitive, so taka that into account if a link is not generated. 
+
+Example:
+- Siege of Dragon Keep
+- Deck of Many Things
+
 ## Images
 
 Use the normal markdown syntax for images `![Name of the image](url)`. You can use images from the web by their URL or use your own images from the `assets` folder.
@@ -44,7 +52,11 @@ Use the normal markdown syntax for images `![Name of the image](url)`. You can u
 ![Floating Image](/assets/img/default.png)
 {:.float-md-right}
 
-We can also add images that will float to the right of the text. Just add `{.float-md-right}` after the image code. On mobile devices the image will be centered and inserted between the text instead of floating. Check [Bootstrap documentation](https://getbootstrap.com/docs/4.0/utilities/float/) rewarding the float funcionality for other options.
+We can also add images that will float to the right of the text. Just add `{.float-md-right}` after the image code. 
+
+On mobile devices the image will be centered and inserted between the text instead of floating. 
+
+Check [Bootstrap documentation](https://getbootstrap.com/docs/4.0/utilities/float/) rewarding the float funcionality for other options.
 
 ## Tables
 
