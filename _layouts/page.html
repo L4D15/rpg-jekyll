@@ -4,5 +4,6 @@ layout: default
 
 <div class="content-area">
   <h1 class="page-title">{{ page.title }}</h1>
+  {% include tags.html dm_only=page.dm_only tags=page.tag %}
     {{ content }}
 </div>

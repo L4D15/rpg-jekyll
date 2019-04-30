@@ -11,14 +11,6 @@
 
                     {% if page.dm_only==false or jekyll.environment=="development" %}
 
-                        {% if page.dm_only %}
-                            <span class="badge badge-danger">DM Only</span>
-                        {% endif %}
-
-                        {% for tag in page.tags %}
-                            <span class="badge badge-dark">{{ tag }}</span>
-                        {% endfor %}
-
                         {{ content }}
 
                     {% endif %}

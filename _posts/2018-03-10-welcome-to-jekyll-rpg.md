@@ -21,7 +21,7 @@ Using a combination of pre-built funcionality and custom HTML code we can achiev
 
 ## Automatic linking
 
-Write the title of any other page in your site and it will automatically be converted to a link to that page. The link search is case sentitive, so taka that into account if a link is not generated. 
+Write the title of any other page in your site and it will automatically be converted to a link to that page. The link search is case sentitive, so take that into account if a link is not generated. 
 
 Example:
 - Siege of Dragon Keep

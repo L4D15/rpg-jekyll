@@ -3,6 +3,8 @@ title: Siege of Dragon Keep
 category: Lore
 image: /assets/img/stories/siege_dragon_keep.jpg
 preview: /assets/img/stories/siege_dragon_keep.jpg
+tag: [Battle, War, Example]
+dm_only: true
 ---
 
 You can use a story entry to expand on your world's lore, or describe a quest players can take at some point.
