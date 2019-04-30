@@ -2,6 +2,7 @@
 title: Shadow Dale
 image: /assets/img/locations/shadowdale.jpg
 preview: /assets/img/locations/shadowdale.jpg
+tag: [Sword Coast, Village, Small]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis magna et est rutrum malesuada. Praesent massa velit, viverra in fermentum mollis, aliquet sit amet leo. Proin dapibus viverra aliquam. Aliquam fermentum metus purus, eget tristique diam cursus sed. Mauris viverra risus quis varius rutrum. Integer aliquam, nisi non pulvinar sollicitudin, erat dui rutrum nisl, id vulputate lacus magna semper lacus. Integer posuere felis a volutpat pellentesque. Ut malesuada molestie urna, nec mattis magna suscipit in. Aenean rhoncus rhoncus eleifend. Quisque pretium neque quis felis pellentesque vestibulum. Morbi vel magna id velit aliquam gravida quis sit amet libero.

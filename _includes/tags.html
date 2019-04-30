@@ -1,0 +1,9 @@
+{% if include.dm_only==false or jekyll.environment=="development" %}
+    {% if include.dm_only %}
+        <span class="badge badge-danger mb-2">DM Only</span>
+    {% endif %}
+
+    {% for tag in include.tags %}
+        <span class="badge badge-dark mb-2">{{ tag }}</span>
+    {% endfor %}
+{% endif %}

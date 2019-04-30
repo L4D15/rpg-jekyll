@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
     <span class="navbar-toggler-icon"></span>
@@ -17,10 +17,6 @@
       {% endfor %}
     </ul>
     {% if jekyll.environment=="development" %}
-    <span class="badge badge-success my-2 my-lg-0 mr-4">DM Mode</span>
+    <span class="badge badge-danger my-2 my-lg-0 mr-4">DM Mode</span>
     {% endif %}
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </nav>

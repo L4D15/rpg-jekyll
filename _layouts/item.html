@@ -6,6 +6,8 @@ layout: default
         <img class="img-fluid img-thumbnail" src="{{ page.image }}"/>
     </div>
     <div class="col-lg-8 col-md-6 col-sm-12 content-area">
+    	<h1 class="page-title">{{ page.title }}</h1>
+    	{% include tags.html dm_only=page.dm_only tags=page.tag %}
         {{ content }}
     </div>
 </div>

@@ -4,17 +4,17 @@ class TableOfContentsGenrator < Jekyll::Generator
   def generate(site)
     parser = Jekyll::Converters::Markdown.new(site.config)
 
-    puts "Generating Table of contents:"
+    #puts "Generating Table of contents:"
 
     campaign_collections = Jekyll.configuration({})['collections'].keys
 
     campaign_collections.each do |collection_name|
       if collection_name == "posts"
-        puts "  posts [IGNORED]"
+        #puts "  posts [IGNORED]"
       else
-        puts "  #{collection_name}"
+        #puts "  #{collection_name}"
         site.collections[collection_name].docs.each do |page|
-          puts "    #{page.data['title']}"
+          #puts "    #{page.data['title']}"
           content = page.content
           converted_content = parser.convert(content)
           doc = Nokogiri::HTML(converted_content)

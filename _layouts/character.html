@@ -67,6 +67,8 @@ layout: default
     </div>
         <br>
     <div class="col-lg-6 col-md-6 col-sm-12 content-area">
+
+        {% include tags.html dm_only=page.dm_only tags=page.tags %}
     {{ content }}
     </div>
 </div>
