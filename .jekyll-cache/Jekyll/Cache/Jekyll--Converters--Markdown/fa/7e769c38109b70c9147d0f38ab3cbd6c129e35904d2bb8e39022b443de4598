@@ -1,0 +1,2 @@
+I":<p>{% include gridlist.html list=site.stories %}</p>
+:ET

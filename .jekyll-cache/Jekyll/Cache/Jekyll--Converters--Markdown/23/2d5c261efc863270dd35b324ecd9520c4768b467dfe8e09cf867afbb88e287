@@ -1,0 +1,22 @@
+I"<table>
+  <tbody>
+    <tr>
+      <td>{% assign all_categories = site.rules</td>
+      <td>map: “category”</td>
+      <td>compact</td>
+      <td>uniq %}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>{% for category in all_categories %}</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign articles = site.rules | where: "category", category %}
+</code></pre></div></div>
+
+<h2 id="-category-">{{ category }}</h2>
+
+<p>{% include gridlist.html list=articles %}</p>
+
+<p>{% endfor %}</p>
+:ET

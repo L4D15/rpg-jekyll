@@ -16,3 +16,13 @@ If you want to edit your content and see it update realtime, start a local serve
 Default collections are defined for you, such as `Stories`, `Characters` and `Locations`. If you want to define custom collections for your campaign, edit `_config.yml` and add a collection in the `collections` section. To populate your new collection, create a new folder with the name of the collection with an `_` prefix and create new `.md` or `.html` files inside.
 
 The new collection will automatically appear in the top navigation bar, and clicking on that will link to a page with the correct permalink setup for that collection (take a look at the YAML front matter of other `index.html` files in the default collections).
+
+## Wikify
+
+When building your site RPG Jekyll will analise your articles in search for possible links to other articles. If a text matches the title of any other article, it will be converted to a link to that article automatically. There is no need to use `[]` so you can focus on writting instead of linking.
+
+## Changelog
+
+### 1.7.0
+
+- Updated to Jekyll 4.

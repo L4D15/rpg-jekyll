@@ -1,0 +1,2 @@
+I"8<p>{% include gridlist.html list=site.items %}</p>
+:ET
