@@ -1,0 +1,176 @@
+I"�<ol>
+  <li>Create a <code class="language-plaintext highlighter-rouge">.md</code> file under the appropriate folder.</li>
+  <li>Add the required YAML front matter at the start (use an already existing article for reference)</li>
+  <li>Write using Markdown syntax.</li>
+  <li>Profit.</li>
+</ol>
+
+<p>RPG Jekyll uses <a href="https://kramdown.gettalong.org/documentation.html">kramdown</a> to convert <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a> syntax to HTML, which is then styled using <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a>. Check the documentation for each one if you want to do something not implemented, but the core concepts are the following:</p>
+
+<ul>
+  <li>You can insert HTML code, but be careful not to break the page layout.</li>
+  <li>If you add custom HTML code and want something inside to be parsed as Markdown, add <code class="language-plaintext highlighter-rouge">markdown="1"</code> to the container.</li>
+  <li>Kramdown allows to apply custom classes by appending <code class="language-plaintext highlighter-rouge">{:.your-class-name}</code> after an element.</li>
+</ul>
+
+<h1 id="advanced-features">Advanced Features</h1>
+
+<p>Using a combination of pre-built funcionality and custom HTML code we can achieve great results with little to no effort.</p>
+
+<h2 id="automatic-linking">Automatic linking</h2>
+
+<p>Write the title of any other page in your site and it will automatically be converted to a link to that page. The link search is case sentitive, so take that into account if a link is not generated.</p>
+
+<p>Example:</p>
+<ul>
+  <li><a href="/stories/SiegeOfDragonKeep.html">Siege of Dragon Keep</a></li>
+  <li><a href="/deckofmanythings.html">Deck of Many Things</a></li>
+</ul>
+
+<h2 id="images">Images</h2>
+
+<p>Use the normal markdown syntax for images <code class="language-plaintext highlighter-rouge">![Name of the image](url)</code>. You can use images from the web by their URL or use your own images from the <code class="language-plaintext highlighter-rouge">assets</code> folder.</p>
+
+<h3 id="from-internet">From Internet</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Image from Internet](https://i.imgur.com/ESVU8ak.gif)
+</code></pre></div></div>
+
+<p><img src="https://i.imgur.com/ESVU8ak.gif" alt="Image from Internet" /></p>
+
+<h3 id="from-assets-folder">From Assets folder</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Image from Assets](/assets/img/stories/siege_dragon_keep.jpg)`
+</code></pre></div></div>
+
+<p><img src="/assets/img/stories/siege_dragon_keep.jpg" alt="Image from Assets" /></p>
+
+<h2 id="floating-images">Floating Images</h2>
+
+<p class="float-md-right"><img src="/assets/img/default.png" alt="Floating Image" /></p>
+
+<p>We can also add images that will float to the right of the text. Just add <code class="language-plaintext highlighter-rouge">{.float-md-right}</code> after the image code.</p>
+
+<p>On mobile devices the image will be centered and inserted between the text instead of floating.</p>
+
+<p>Check <a href="https://getbootstrap.com/docs/4.0/utilities/float/">Bootstrap documentation</a> rewarding the float funcionality for other options.</p>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header A</th>
+      <th style="text-align: center">Header B</th>
+      <th style="text-align: right">Header C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">This</td>
+      <td style="text-align: center">is</td>
+      <td style="text-align: right">awesome</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">it</td>
+      <td style="text-align: center">even</td>
+      <td style="text-align: right">supports</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">striped</td>
+      <td style="text-align: center">style.</td>
+      <td style="text-align: right">Yeah!</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="info-boxes">Info boxes</h2>
+
+<p>The Markdown syntax for a quote will render an info box. There are several styles of boxes, so choose whatever best suits the content that will be inside the box, whether is text to read-out-loud or a warning to not forget something when playing.</p>
+
+<blockquote>
+  <p>This is a normal box</p>
+</blockquote>
+
+<blockquote class="alert-danger">
+  <p>This is a danger box. We added <code class="language-plaintext highlighter-rouge">{:.alert-danger}</code> at the end so kramdown adds that Bootstrap class to the box and becomes red. There are more colors, check <a href="https://getbootstrap.com/docs/4.0/components/alerts/">Bootstrap documentation</a> for a complete list.</p>
+</blockquote>
+
+<h2 id="custom-html">Custom HTML</h2>
+
+<p>Adding custom HTML code allows you to display content in many different ways, but can break you site layout, do it with care.</p>
+
+<h3 id="columns">Columns</h3>
+
+<p>There is no easy way to get content to be split into columns automatically, so you will have to do it using HTML and Bootstrap directly. Here’s an example on how to do it.</p>
+
+<div class="row">
+<div class="col-md-4 col-sm-12">
+    <p>This is the first column. If you want the content to be parsed as Markdown and converted to proper HTML, remember to include the <code class="language-plaintext highlighter-rouge">markdown="1"</code> property in the container.</p>
+
+    <p>Also, don’t indent the HTML code nor the Markdown content within or it will not be parsed.</p>
+  </div>
+<div class="col-md-4 col-sm-12">
+    <p>Also, make sure to use Bootstrap responsive layout so columns are properly positioned for every device. For three columns we’ve used <code class="language-plaintext highlighter-rouge">col-md-4 col-sm-12</code> so it is shown as three columns in medium-size devices or higher, but as a single column on mobile devices.</p>
+  </div>
+<div class="col-md-4 col-sm-12">
+    <p>Take a look at Bootstrap documentation about layouts and familiarize with the concept. That will allow you to accomplish more complex layouts without breaking your site in mobile devices.</p>
+  </div>
+</div>
+
+<h3 id="advanced-columns">Advanced columns</h3>
+
+<p>Once we are adding HTML directly, we can do many, many things, like non-equal columns with different styles.</p>
+
+<div class="row">
+
+<div class="col-md-6 col-sm-12">
+    <p>This column uses 6 out of 12 <em>column slots</em>, so it is larger than the others. We can use the extra space to add an image, for example.</p>
+
+    <p><img src="/assets/img/locations/shadowdale.jpg" alt="Shadow Dale" /></p>
+  </div>
+
+<div class="col-md-4 col-sm-12 card text-white bg-primary p-2">
+    <p>This is a smaller column with a different style, because why not.</p>
+  </div>
+
+<div class="col-md-2 col-sm-12 card text-white bg-secondary p-2">
+    <p>We can also style each column differently by adding different classes or styles to the container.</p>
+  </div>
+
+</div>
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
+<p>If you add a first-level header (the single <code class="language-plaintext highlighter-rouge">#</code>) to an article, a table of contents of all the headings and sections of the article will be displayed on the side. This is specially useful for long articles, and supports indexing up to third level heading.</p>
+
+<p>For example, an article with the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Header 1
+## Header 1.1
+### Header 1.1.1
+# Header 2
+## Header 2.2
+</code></pre></div></div>
+
+<p>Will generate the following table of contents on the side:</p>
+
+<ul>
+  <li>Header 1
+    <ul>
+      <li>Header 1.1
+        <ul>
+          <li>Header 1.1.1</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Header 2
+    <ul>
+      <li>Header 2.1</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Only locations, rules and stories will display the table of contents, as characters and items display other information on the sidebar, and sessions (<code class="language-plaintext highlighter-rouge">_posts</code>) are not expected to be that long.</p>
+:ET

@@ -1,0 +1,46 @@
+I"�<p>You can use a story entry to expand on your world’s lore, or describe a quest players can take at some point.</p>
+
+<h1 id="section-1">Section 1</h1>
+
+<p>If you insert a top-level heading, a table of content will be generated and displayed at the side. Useful if your document grows larger.</p>
+
+<h2 id="section-11">Section 1.1</h2>
+
+<p>You can also include tables, useful for random encounters.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Roll d20</th>
+      <th style="text-align: left">Event</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1-5</td>
+      <td style="text-align: left">Nothing happens</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6-10</td>
+      <td style="text-align: left">Goblins x4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11-15</td>
+      <td style="text-align: left">Kobolds x6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16-20</td>
+      <td style="text-align: left">Ancient Red Dragon</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="linking">Linking</h3>
+
+<p>You can create links to other content using the regular markdown syntax and providing a relative URL. For example, <a href="/characters/kiki">Kiki</a>, <a href="/locations/shadowdale">Shadow Dale</a> or <a href="/deckofmanythings">Deck of Many Things</a>.</p>
+
+<blockquote class="alert-warning">
+  <p>Beware of URLs. If you don’t specify a permaling for an article, its URL will be its relative project path without the starting <code class="language-plaintext highlighter-rouge">_</code>. If an article has a custom permaling set in its front matter, like the <a href="/deckofmanythings.html">Deck of Many Things</a> does, you will need to use that as the URL.</p>
+</blockquote>
+
+:ET
